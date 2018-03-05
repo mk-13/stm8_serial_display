@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="lcd" />
+		<Option pch_mode="2" />
+		<Option compiler="sdcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/lcd.hex" prefix_auto="0" extension_auto="0" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="sdcc" />
+				<Compiler>
+					<Add option="--opt-code-size" />
+					<Add option="-DSTM8S103" />
+					<Add directory="../STM8S_lib/inc" />
+				</Compiler>
+				<Linker>
+					<Add library="/stm8/codeblocks/tools/SDCC/lib/stm8/stm8.lib" />
+					<Add library="../STM8S_lib/lib/STM8S_lib.lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="adc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="adc.h" />
+		<Unit filename="eeprom.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="eeprom.h" />
+		<Unit filename="i2cSlave.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="i2cSlave.h" />
+		<Unit filename="lcd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lcd.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="timebase.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="timebase.h" />
+		<Unit filename="uart.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="uart.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

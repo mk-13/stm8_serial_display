@@ -1,0 +1,5 @@
+- I2C Address und Baudrate im EEPROM
+- I2C Address und Baudrate bei Startup anzeigen
+- I2C address und Baudrate über Commands änderbar
+- ein Analogeingang zum Spannungsmessen konfigurieren und Spannung zu Beginn anzeigen
+- comd zum invertieren einer Anzahl Zeichen ab mitgegebener Cursorpos
